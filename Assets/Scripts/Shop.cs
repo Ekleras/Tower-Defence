@@ -6,7 +6,7 @@ public class Shop : MonoBehaviour {
     public TurretBlueprint missileLauncher;
 
     BuildManager buildManager;
-   
+
     void Start()
     {
         buildManager = BuildManager.instance;
@@ -17,7 +17,7 @@ public class Shop : MonoBehaviour {
         buildManager.SelectTurretToBuild(standartTurret);
     }
 
-    public void SelectMissleLauncher()
+    public void SelectMissileLauncher()
     {
         buildManager.SelectTurretToBuild(missileLauncher);
     }

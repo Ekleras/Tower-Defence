@@ -9,6 +9,7 @@ public class Node : MonoBehaviour {
 
     [Header("Optional")]
     public GameObject turret;
+
     public Vector3 positionOffset;
     BuildManager buildManager;
 
@@ -36,7 +37,7 @@ public class Node : MonoBehaviour {
 
         buildManager.BuildTurretOn(this);
 
-        }
+    }
 
     public Vector3 GetBuildPosition()
     {

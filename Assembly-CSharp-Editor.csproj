@@ -10,7 +10,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>
     </RootNamespace>
-    <ProjectGuid>{C2305B15-A1DB-0BD3-1F10-BF847C7EE4D8}</ProjectGuid>
+    <ProjectGuid>{9D0CA653-1918-CC06-C721-10650BB06936}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -63,10 +63,10 @@
   <ItemGroup>
     <Compile Include="Assets\Editor\ScreenshotTaker.cs" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>D:/University/zaidimai/Tower-Defence-master/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>D:/University/zaidimai/ekleras/Tower-Defence/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>D:/University/zaidimai/Tower-Defence-master/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>D:/University/zaidimai/ekleras/Tower-Defence/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -356,7 +356,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{9B23CC92-2B98-E832-08C8-53E511C3B85B}</Project>
+      <Project>{2382CDED-BB9B-4185-CE64-F8CF8FA365A7}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
   </ItemGroup>

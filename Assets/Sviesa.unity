@@ -26870,8 +26870,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   standarTurretPrefab: {fileID: 1162532463901366, guid: c802b3cffa3dbfa4c8f923d92e1054f0,
     type: 2}
-  missleLauncherPrefab: {fileID: 1841135051368340, guid: b60e027b0aa63ae449cbc5a71d12b134,
-    type: 2}
+  missileLauncherPrefab: {fileID: 0}
 --- !u!114 &1584903798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26880,7 +26879,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1584903794}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc40e331c46f9bb41baae6dbdf5ca7e9, type: 3}
+  m_Script: {fileID: 11500000, guid: c4815ee0ca880c940bf55edcd0e735fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   startMoney: 400
@@ -31271,7 +31270,7 @@ Prefab:
     - target: {fileID: 114144316283851486, guid: cf952bde6b109db42974040999fca89c,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SelectMissleLauncher
+      value: SelectMissileLauncher
       objectReference: {fileID: 0}
     - target: {fileID: 114663143020122262, guid: cf952bde6b109db42974040999fca89c,
         type: 2}
@@ -31288,21 +31287,6 @@ Prefab:
         type: 2}
       propertyPath: m_PreferredHeight
       value: 85
-      objectReference: {fileID: 0}
-    - target: {fileID: 114144316283851486, guid: cf952bde6b109db42974040999fca89c,
-        type: 2}
-      propertyPath: m_Colors.m_PressedColor.r
-      value: 0.47058827
-      objectReference: {fileID: 0}
-    - target: {fileID: 114144316283851486, guid: cf952bde6b109db42974040999fca89c,
-        type: 2}
-      propertyPath: m_Colors.m_PressedColor.g
-      value: 0.47058827
-      objectReference: {fileID: 0}
-    - target: {fileID: 114144316283851486, guid: cf952bde6b109db42974040999fca89c,
-        type: 2}
-      propertyPath: m_Colors.m_PressedColor.b
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cf952bde6b109db42974040999fca89c, type: 2}
