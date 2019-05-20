@@ -128,3 +128,4 @@ MonoBehaviour:
   explosionRatius: 10
   impactEffect: {fileID: 1361254629330684, guid: aee9ff35bccd35d45a744cca2aa27f39,
     type: 2}
+  damage: 25
