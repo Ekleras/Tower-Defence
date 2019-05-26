@@ -3,7 +3,7 @@ using System.Collections;
 
 public class GameMusicPlayer : MonoBehaviour
 {
-
+    // Scripta radau, kad muzika perejus is scenos i scena nedingtu.
     private static GameMusicPlayer instance = null;
     public static GameMusicPlayer Instance
     {

@@ -16,6 +16,7 @@ public class NodeUI : MonoBehaviour {
         this.target = _target;
         transform.position = target.GetBuildPosition();
 
+        // Galim ateity implementuot daugiau UPDEITU nes dabar tik vienas.
         if (!target.isUpgraded)
         {
             upgradeCost.text = "$" + target.turretBlueprint.upgradeCost;
@@ -27,7 +28,7 @@ public class NodeUI : MonoBehaviour {
             upgradeButton.interactable = false;
         }
 
-
+        // Galim stringa permest kaip private charą, jei reiktų pakeist į kokius eurus, kad nereiktų ieškot.
         sellAmount.text = "$" + target.turretBlueprint.GetSellAmount();
 
         ui.SetActive(true);
@@ -38,12 +39,14 @@ public class NodeUI : MonoBehaviour {
         ui.SetActive(false);
     }
 
+    // Atnaujinti turreta.
     public void Upgrade()
     {
         target.UpgradeTurret();
         BuildManager.instance.DeselectNode();
     }
 
+    // Parduoti turret Upgrade() ir Sell() onClick eventai nurodyti inspektoriuj.
     public void Sell()
     {
         target.SellTurret();

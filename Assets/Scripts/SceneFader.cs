@@ -14,11 +14,13 @@ public class SceneFader : MonoBehaviour {
         StartCoroutine(FadeIn());
     }
 
+    // Scene - I kuria scena keisti.
     public void FadeTo(string scene)
     {
         StartCoroutine(FadeOut(scene));
     }
 
+    // Uztemsta
     IEnumerator FadeIn()
     {
         float t = 1f;
@@ -31,6 +33,7 @@ public class SceneFader : MonoBehaviour {
         }
     }
 
+    // Prasvieseja
     IEnumerator FadeOut(string scene)
     {
         float t = 0f;

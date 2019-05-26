@@ -17,6 +17,8 @@ public class CameraController : MonoBehaviour {
             return;
         }
 
+        // Nuemiau su positionu, nes nepatogu bent jau man. Palikau su klavetura valdyma. Reiktu nustatyt ribas, kad nebegtu belekiek i sona kamera.
+
 	    if(Input.GetKey("w") /*|| Input.mousePosition.y >= Screen.height - panBorderThickness*/)
         {
             transform.Translate(Vector3.forward * panSpeed * Time.deltaTime, Space.World);

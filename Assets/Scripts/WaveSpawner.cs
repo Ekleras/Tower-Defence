@@ -17,6 +17,7 @@ public class WaveSpawner : MonoBehaviour {
 
     private void Start()
     {
+        // PRISILYGINT IRGI REIKIA!
         EnemiesAlive = enemiesAlive;
     }
 

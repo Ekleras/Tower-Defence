@@ -23,9 +23,10 @@ public class BuildManager : MonoBehaviour {
     private TurretBlueprint turretToBuild;
     public NodeUI nodeUI;
 
-    public bool CanBuild {  get { return turretToBuild != null; } }
+    public bool CanBuild {  get { return turretToBuild != null; } }                    // Geras dalykelis.
     public bool HasMoney { get { return PlayerStats.Money >= turretToBuild.cost; } }
 
+    // Paspaudzia ant kvadratuko musu ;).
     public void SelectNode(Node node)
     {
         if (node == selectedNode)
@@ -39,6 +40,7 @@ public class BuildManager : MonoBehaviour {
         nodeUI.SetTarget(node);
     }
 
+    // Paspaudzia kazkur kitur ;).
     public void DeselectNode()
     {
         selectedNode = null;

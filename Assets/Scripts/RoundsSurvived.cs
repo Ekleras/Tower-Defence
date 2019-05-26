@@ -12,6 +12,7 @@ public class RoundsSurvived : MonoBehaviour {
         StartCoroutine(AnimateText());
     }
 
+    // Uzsipildo nuo 0 iki isgyventu roundu skaiciaus. 
     IEnumerator AnimateText()
     {
         roundsText.text = "0";

@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour {
 
+    // Vel gi nekeiciam cia nieko, yra prefabai. 
     public float speed = 10f;
     public float startHealth = 100;
     private float health;
@@ -21,10 +22,9 @@ public class Enemy : MonoBehaviour {
 
     private void Start()
     {
-        target = WayPoints.points[0];
+        target = WayPoints.way[0];
         health = startHealth;
 
-        
     }
 
     public void TakeDamage(int amount)
@@ -38,6 +38,7 @@ public class Enemy : MonoBehaviour {
         }
     }
 
+    // Apskaiciuot normaliai pinigus reik, kad ekonomika kazkokia butu.
     void Die()
     {
         isDead = true;
@@ -62,16 +63,17 @@ public class Enemy : MonoBehaviour {
 
     void GetNextWayPoint()
     {
-        if (wavepointIndex >= WayPoints.points.Length - 1)
+        if (wavepointIndex >= WayPoints.way.Length - 1)
         {
             EndPath();
             return;
         }
 
         wavepointIndex++;
-        target = WayPoints.points[wavepointIndex];
+        target = WayPoints.way[wavepointIndex];
     }
 
+    // Pasiekia gala.
     void EndPath()
     {
         PlayerStats.Lives--;

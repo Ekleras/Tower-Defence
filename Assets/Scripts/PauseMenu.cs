@@ -11,6 +11,7 @@ public class PauseMenu : MonoBehaviour {
 
     private void Update()
     {
+        // KeyCode.Escape(ESC) arba KeyCode.P(P) ijungia pauze. 
         if(Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P))
         {
             Toggle();
@@ -21,7 +22,8 @@ public class PauseMenu : MonoBehaviour {
     {
         if (GameManager.GameIsOver)
             return;
-
+        
+        // Ijungiam pauzes canvas ir atitinkamai sustabdom/paleidziam laika.
         ui.SetActive(!ui.activeSelf);
         if (ui.activeSelf)
         {
@@ -33,6 +35,7 @@ public class PauseMenu : MonoBehaviour {
         }
     }
 
+    // OnClick metodas ijungti lygi per naujo. Naudojam SceneFaderi graziam perejimui.
     public void Retry()
     {
         Toggle();

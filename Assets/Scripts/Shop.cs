@@ -12,11 +12,13 @@ public class Shop : MonoBehaviour {
         buildManager = BuildManager.instance;
     }
 
+    // Paprastas Turretas. 
     public void SelectStandartTurret()
     {
         buildManager.SelectTurretToBuild(standartTurret);
     }
 
+    // Missile Launcheris. 
     public void SelectMissileLauncher()
     {
         buildManager.SelectTurretToBuild(missileLauncher);

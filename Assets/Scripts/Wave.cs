@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// -> Sita naudojam nepamiršk geras dalykas !
 [System.Serializable]
 public class Wave{
 

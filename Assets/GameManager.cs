@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour {
         if (GameIsOver)
             return;
 
+        // E mygtukas = Game Over. Reiktu issimti is runtime turbut....
         if (Input.GetKeyDown("e"))
         {
             EndGame();
@@ -38,6 +39,8 @@ public class GameManager : MonoBehaviour {
     public void WinLevel()
     {
         GameIsOver = true;
+        if(PlayerPrefs.GetInt("highscore") < PlayerStats.Money)
+        PlayerPrefs.SetInt("highscore", PlayerStats.Money);
         completeLevelUI.SetActive(true);
     }
 }

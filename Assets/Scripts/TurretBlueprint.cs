@@ -11,6 +11,7 @@ public class TurretBlueprint  {
     public int upgradeCost;
     public GameObject upgradedPrefab;
 
+    // Parduoda uz dvigubai pigiau. Reikes paskaiciuot ir apibendrint kiek monstrai duoda ir pns.
     public int GetSellAmount()
     {
         return cost / 2;

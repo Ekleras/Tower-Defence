@@ -10,6 +10,7 @@ public class LevelSelector : MonoBehaviour {
     {
         int levelReached = PlayerPrefs.GetInt("levelReached",1);
 
+        // Pachekina ar lygiai ivykdyti.
         for(int i=0; i<levelButtons.Length; i++)
         {
             if(i + 1 > levelReached)
@@ -17,6 +18,7 @@ public class LevelSelector : MonoBehaviour {
         }
     }
 
+    // onClick eventas.
     public void Select(string levelName)
     {
         fader.FadeTo(levelName);

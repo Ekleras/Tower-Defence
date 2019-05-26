@@ -3,6 +3,7 @@ using UnityEngine.EventSystems;
 
 public class Node : MonoBehaviour {
 
+    // Spalvos uzejus, kai truksta pinigu nusistatom inspektoriuj.
     public Color hoverColor;
     public Color notEnoughMoneyColor;
 
@@ -49,6 +50,7 @@ public class Node : MonoBehaviour {
     {
         if (PlayerStats.Money < blueprint.cost)
         {
+            // Implementuot i canvasa zinute!
             Debug.Log("Not enough money");
             return;
         }
@@ -69,13 +71,14 @@ public class Node : MonoBehaviour {
     {
         if (PlayerStats.Money < turretBlueprint.upgradeCost)
         {
+            // Vel gi i canvasa importuot zinute!
             Debug.Log("Not enough money to upgrade that!");
             return;
         }
 
         PlayerStats.Money -= turretBlueprint.upgradeCost;
 
-        //Get rid of the old turret!
+        // DESTROY istrinam turreta.
         Destroy(turret);
 
         GameObject _turret = (GameObject)Instantiate(turretBlueprint.upgradedPrefab, GetBuildPosition(), Quaternion.identity);

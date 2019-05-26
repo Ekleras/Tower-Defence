@@ -2,6 +2,7 @@
 
 public class Bullet : MonoBehaviour {
 
+    // Prefabe nustatom inspektoriuj, kode values nekeiciam! 
     private Transform target;
     public float speed = 70f;
     public float explosionRatius = 0;
@@ -13,12 +14,10 @@ public class Bullet : MonoBehaviour {
         target = _target;
     }
 
-	// Use this for initialization
 	void Start () {
 		
 	}
 	
-	// Update is called once per frame
 	void Update () {
         if (target == null)
         {
@@ -52,7 +51,6 @@ public class Bullet : MonoBehaviour {
         {
             Damage(target);
         }
-
         
         Destroy(gameObject);
     }

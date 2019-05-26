@@ -9,11 +9,13 @@ public class CompleteLevel : MonoBehaviour {
     public string nextLevel = "Level02";
     public int nextLevelIndex = 2;
 
+    // onClick Eventas 
     public void Menu()
     {
         sceneFader.FadeTo(menuSceneName);
     }
 
+    // onClick Eventas 
     public void Continue()
     {
         PlayerPrefs.SetInt("levelReached", nextLevelIndex);

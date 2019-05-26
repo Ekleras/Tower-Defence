@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Ground : MonoBehaviour {
     
-	// Use this for initialization
+
 	void Start () {
        // GameObject path = GameObject.Find("/Environment/Ground (10)");
        // path.GetComponent<Renderer>().material.color = Color.red;
